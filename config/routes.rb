@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'comments#index'
-  get 'comments/index'
+  resources :blogs
+  root 'blogs#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
